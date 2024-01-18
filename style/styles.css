@@ -78,6 +78,8 @@ body {}
     -webkit-text-stroke-width: 5px;
     text-align: center;
     margin-top: 110px;
+    padding-left: 400px;
+    padding-right: 400px;
 
 
 }
@@ -90,9 +92,7 @@ body {}
     -webkit-text-stroke-color: #163051;
     -webkit-text-stroke-width: 5px;
     text-align: center;
-    margin-top: 320px;
-
-
+    padding: 320px;
 }
 
 .font7 {
@@ -110,6 +110,32 @@ body {}
     line-height: normal;
     font-weight: 200px;
     margin-left: 54px;
+}
+
+.font9 {
+    font-family: Nico-Moji;
+    font-size: 125px;
+    line-height: normal;
+    color: white;
+    -webkit-text-stroke-color: #163051;
+    -webkit-text-stroke-width: 5px;
+    text-align: center;
+    padding-top: 330px;
+}
+
+.font10 {
+    font-family: Nico-Moji;
+    font-size: 125px;
+    line-height: normal;
+    color: white;
+    -webkit-text-stroke-color: #163051;
+    -webkit-text-stroke-width: 5px;
+    text-align: center;
+    margin-top: 110px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 
 .btn1 {

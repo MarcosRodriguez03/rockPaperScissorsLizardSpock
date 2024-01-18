@@ -10,35 +10,202 @@
     <link rel="stylesheet" href="./style/styles.css">
 </head>
 
-<body class="page1Bg">
+<body class="page1Bg" id="body">
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="firstPageHide" style="display: block;">
         <div class="row ">
             <div class="col font1 ">Rock, Paper, Scissors, Lizard, Spock
             </div>
             <div class="col d-flex flex-column align-items-end justify-content-end">
-                <a href="./pages/gameModePage.html">
-                    <button class="btn1">
-                        <p class="font2  m-0">2 Players</p>
-                    </button>
-                </a>
 
-                <a href="">
-                    <button class="btn1">
-                        <p class="font2  m-0">Vs CPU</p>
-                    </button>
-                </a>
+                <button class="btn1" id="twoPlayerBtn">
+                    <p class="font2  m-0">2 Players</p>
+                </button>
+
+
+
+                <button class="btn1" id="vsCpuBtn">
+                    <p class="font2  m-0">Vs CPU</p>
+                </button>
+
 
 
             </div>
         </div>
     </div>
 
+    <div style="display: none;" id="choicesPageHide">
+        <div class="container-fluid d-flex justify-content-between">
+
+            <a>
+                <button class="btn2" id="backBtn">
+                    <p class="font3  m-0">Back</p>
+                </button>
+            </a>
+
+            <button class="btn2" id="rulesBtn">
+                <p class="font3  m-0">Rules</p>
+            </button>
+
+        </div>
+
+        <p class="font4">Choose Mode</p>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col d-flex justify-content-end">
+                    <a>
+                        <button class="btn3" id="suddenDeathBtn">
+                            <p class="font3  m-0">Sudden Death</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="col d-flex justify-content-center">
+                    <a>
+                        <button class="btn3" id="bestOf5Btn">
+                            <p class="font3  m-0">Best of 5</p>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a>
+                        <button class="btn3" id="bestOf7Btn">
+                            <p class="font3  m-0">Best of 7</p>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
+    <!--  -->
+    <div id="rulesBoxHide" style="display: none;">
+        <div class=" rulesBox">
+            <div class="d-flex justify-content-end">
+                <div>
+                    <img id="xBtn" class="xPic" src="../assets/x.png" alt="x">
+                </div>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col">
+                    <p class="font7">Scissors cuts paper. <br>
+                        Paper covers rock. <br>
+                        Rock crushes lizard. <br>
+                        Lizard poisons Spock. <br>
+                        Spock smashes scissors. <br>
+                        Scissors decapitates lizard. <br>
+                        Lizard eats paper. <br>
+                        Paper disproves Spock. <br>
+                        Spock vaporizes rock. <br>
+                        Rock crushes scissors.</p>
+                </div>
+                <div class="col">
+                    <div class="d-flex flex-row align-items-center ">
+                        <img class="rulesPic" src="../assets/rock.png" alt="rock">
+                        <p class="font8 mb-0">Rock</p>
+
+                    </div>
 
 
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="rulesPic" src="../assets/paper.png" alt="paper">
+                        <p class="font8 mb-0">Paper</p>
+                    </div>
 
+
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="rulesPic" src="../assets/scissors.png" alt="scissors">
+                        <p class="font8 mb-0 ">Scissors</p>
+                    </div>
+
+
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="rulesPic" src="../assets/lizard.png" alt="lizard">
+                        <p class="font8 mb-0">Lizard</p>
+                    </div>
+
+
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="rulesPic" src="../assets/spock.png" alt="spock">
+                        <p class="font8 mb-0">Spock</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div style="display: none;" id="gameHide">
+
+        <div class="padding">
+            <div class="d-flex justify-content-between">
+                <p class="scoreBox" id="player1Score">Player 1's Score: 0</p>
+                <p class="scoreBox" id="player2Score">Player 2's Score: 0</p>
+            </div>
+
+            <p class="font5" id="textOnScreen">Player 1's Turn</p>
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col d-flex justify-content-center">
+
+                        <img class="btnImg" id="rockBtn" src="../assets/rock.png" alt="rock">
+
+                    </div>
+
+
+                    <div class="col d-flex justify-content-center">
+
+                        <img class="btnImg" id="paperBtn" src="../assets/paper.png" alt="paper">
+
+                    </div>
+
+
+                    <div class="col d-flex justify-content-center">
+
+                        <img class="btnImg" id="scissorsBtn" src="../assets/scissors.png" alt="Scissors">
+
+                    </div>
+
+
+                    <div class="col d-flex justify-content-center">
+
+                        <img class="btnImg" id="lizardBtn" src="../assets/lizard.png" alt="Lizard">
+
+                    </div>
+
+
+                    <div class="col d-flex justify-content-center">
+
+                        <img class="btnImg" id="spockBtn" src="../assets/spock.png" alt="spock">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="display: none;" id="endScreen">
+        <p class="font9" id="winText">Player 1 Wins!</p>
+        <div class="d-flex justify-content-center">
+            <a href="../index.html">
+                <button class="btn4">
+                    <p class="font3  m-0">Home</p>
+                </button>
+            </a>
+        </div>
+    </div>
 
 
 
