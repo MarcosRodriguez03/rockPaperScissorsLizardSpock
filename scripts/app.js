@@ -16,6 +16,8 @@ let player2Score = document.getElementById("player2Score");
 let textOnScreen = document.getElementById("textOnScreen");
 let endScreen = document.getElementById("endScreen");
 let winText = document.getElementById("winText");
+let pointAlert = document.getElementById("pointAlert");
+let alertText = document.getElementById("alertText");
 
 let rockBtn = document.getElementById("rockBtn");
 let paperBtn = document.getElementById("paperBtn");
@@ -78,7 +80,7 @@ bestOf7Btn.addEventListener('click', function () {
     choicesPageHide.style.display = "none"
     gameHide.style.display = "block"
     body.className = "gameBg"
-    maxScore = 5;
+    maxScore = 4;
 })
 rockBtn.addEventListener('click', async () => {
     if (playerOneTurn && playerIsTrue) {
@@ -195,36 +197,123 @@ spockBtn.addEventListener('click', async () => {
 function compare(p1, p2) {
     if (p1 === p2) {
         //tie nothing
+
+        alertText.textContent = "Tie, womp womp..."
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
+
     } else if (p1 === 'rock' && p2 === 'scissors' || p1 === 'rock' && p2 === 'lizard') {
         // p1 wins
         p1Points++;
+        alertText.textContent = "Player One +1 Point"
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
+        // alert("Player One +1 Point!");
     } else if (p1 === 'paper' && p2 === 'rock' || p1 === 'paper' && p2 === 'spock') {
         //p1 wins
         p1Points++;
+        alertText.textContent = "Player One +1 Point"
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
+
     } else if (p1 === 'scissors' && p2 === 'paper' || p1 === 'scissors' && p2 === 'lizard') {
         //p1 wins
         p1Points++;
+        alertText.textContent = "Player One +1 Point"
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
+
     } else if (p1 === 'lizard' && p2 === 'paper' || p1 === 'lizard' && p2 === 'spock') {
         //p1 wins
         p1Points++;
+        alertText.textContent = "Player One +1 Point"
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
+
     } else if (p1 === 'spock' && p2 === 'scissors' || p1 === 'spock' && p2 === 'rock') {
         //p1 wins
         p1Points++;
+        alertText.textContent = "Player One +1 Point"
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
+
     } else if (p1 === 'rock' && p2 === 'paper' || p1 === 'rock' && p2 === 'spock') {
         //p2 wins
         p2Points++;
+        if (!playerIsTrue) {
+            alertText.textContent = "Computer +1 Point"
+        } else {
+            alertText.textContent = "Player Two +1 Point"
+        }
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
+
     } else if (p1 === 'paper' && p2 === 'scissors' || p1 === 'paper' && p2 === 'lizard') {
         //p2 wins
         p2Points++;
+
+        if (!playerIsTrue) {
+            alertText.textContent = "Computer +1 Point"
+        } else {
+            alertText.textContent = "Player Two +1 Point"
+        }
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
     } else if (p1 === 'scissors' && p2 === 'spock' || p1 === 'scissors' && p2 === 'rock') {
         //p2 wins
         p2Points++;
+
+        if (!playerIsTrue) {
+            alertText.textContent = "Computer +1 Point"
+        } else {
+            alertText.textContent = "Player Two +1 Point"
+        }
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
     } else if (p1 === 'lizard' && p2 === 'scissors' || p1 === 'lizard' && p2 === 'rock') {
         //p2 wins
         p2Points++;
+
+        if (!playerIsTrue) {
+            alertText.textContent = "Computer +1 Point"
+        } else {
+            alertText.textContent = "Player Two +1 Point"
+        }
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
     } else if (p1 === 'spock' && p2 === 'paper' || p1 === 'spock' && p2 === 'lizard') {
         //p2 wins
+
         p2Points++;
+        if (!playerIsTrue) {
+            alertText.textContent = "Computer +1 Point"
+        } else {
+            alertText.textContent = "Player Two +1 Point"
+        }
+        pointAlert.style.display = "block"
+        setTimeout(function () {
+            pointAlert.style.display = "none";
+        }, 1500);
     }
 }
 
@@ -259,4 +348,5 @@ async function computer() {
 
     return data.toLowerCase();
 }
+
 

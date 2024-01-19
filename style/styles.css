@@ -238,3 +238,17 @@ body {}
     margin-left: 143px;
     margin-top: 43px;
 }
+
+.alerts {
+    text-align: center;
+    font-family: Nico-Moji;
+    font-size: 40px;
+    padding: 50px;
+    color: white;
+    background-color: #163051;
+    border: 3px white solid;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
