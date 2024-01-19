@@ -1,6 +1,7 @@
 // Peer Reviewed By: Joseph Poncini
 
 // Peer Review: Super Clean Design. JS and HTML code also look pretty clean too.
+    
     Critiques:
     
     -For the determining winner logic you probably could've done a less taxing method using switch statements or a dictionary of some kind. 
