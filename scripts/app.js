@@ -213,7 +213,6 @@ function compare(p1, p2) {
     } else if (p1 === 'rock' && p2 === 'paper' || p1 === 'rock' && p2 === 'spock') {
         //p2 wins
         p2Points++;
-
     } else if (p1 === 'paper' && p2 === 'scissors' || p1 === 'paper' && p2 === 'lizard') {
         //p2 wins
         p2Points++;
