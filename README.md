@@ -1,3 +1,12 @@
+marcos rodriguez
+
+1/19/24
+
+rock paper scissors lizard spock
+
+i made rock paper scissors lizard spock that has mulitplayer and vs cpu
+
+
 // Peer Reviewed By: Joseph Poncini
 
 // Peer Review: Super Clean Design. JS and HTML code also look pretty clean too.
